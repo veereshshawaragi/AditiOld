@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#cssmenu {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index:20;
+ 
+  
+ 
+}
+#sliderFrame{
+z-index:-1;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ff8400;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ff8400;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+  z-index:20;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+}
+#cssmenu > ul li.has-sub > a {
+  background-image: url('images/caret.png');
+  background-repeat: no-repeat;
+  background-position: 90% -95%;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+  background: #ff8400 url('images/caret.png') no-repeat;
+  background-position: 90% 195%;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #e8dae8;
+  text-shadow: 0px 1px 0px #fff;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #ff8400;
+  color: #fff;
+  text-shadow: 0px 1px 0px #000;
+}
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url('images/menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #ff8400;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+    position: relative;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ff8400;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+.maindiv
+{
+ width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+.ason
+{
+font-family:ubuntu;
+font-size:90px;
+color:#00afef;
+display:inline;
+vertical-align:text-top;
+
+}
+
+#prod h1
+{
+font-family:ubuntu;
+color:#FFB646;
+}
+#prod p
+{
+font-family:ubuntu;
+color:#46A4FF;
+font-size:24px;
+}
+
+
+.col-md-9 h1
+{
+font-family:ubuntu;
+color:#FFB646;
+}
+.abts 
+{
+font-size:22px;
+font-family:ubuntu;
+color:#46A4FF;
+}
+
+
+
+.maincontent{
+width:1100px;
+height:500px;
+}
+.ahref:hover {
+color:#E80C7A;
+text-decoration: none;
+} 
+.aboutus  , .products, .idacce, .cardconsu, .idprint, .cardprinters, .contactus
+{
+display:none;
+}
+.aboutus
+{
+z-index:-1;
+}
+
+.logo{
+width:900px;
+height:100px;
+display:inline;
+
+
+}
+.logo p  {
+display:inline;
+
+float:right;
+
+}
+#address1
+{
+float:left;
+}
+#address2
+{
+float:right;
+}
+#div1
+{
+float:left;
+margin-left:70px;
+
+}
+#div8
+{
+font-size:12px;
+font-family:ubuntu;
+}
+#div5
+{
+float:right;
+margin-left:5px;
+font-family:ubuntu;
+
+}
+#div4
+{
+float:left;
+margin-left:1px;
+
+}
+
+
+#div2
+{
+float:left;
+margin-left:15px;
+}
+#div3
+{
+float:left;
+margin-left:11px;
+
+}
+
+#social a
+{
+display:inline;
+vertical-align: left;
+}
+body
+{
+background-image:url("images/back.png");
+}
+.thumbnail
+{
+ font-size:14px;
+ font-family:ubuntu;
+ display:inline;
+ 
+}
+#botm
+{
+padding-left:30px;
+padding-top:10px;
+}
+
+img.top {vertical-align:text-top;}
